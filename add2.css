@@ -1,0 +1,132 @@
+
+.containeer{
+    width: 350px;
+    height: 600px;
+    background-color: rgb(106, 201, 195);
+    border-radius: 6px;
+    margin-top: 4%;
+    margin-left: 35%;
+    margin-bottom: 20px;
+}
+#int{
+    margin: 7px;
+    padding: 6px;
+    width: 80%;
+    margin-left: 23px;
+
+   
+}
+#male{
+    padding: 20px;
+    margin: 2px;
+}
+#female{
+    padding: 20px;
+    margin: 2px;
+}
+.result{
+    margin-left: 23px;
+    color: red;
+}
+h1{
+    color: rgb(230, 91, 21);
+    text-align: center;
+    font-weight: bolder;
+    font-size: 38px;
+   padding-top: 4%;
+}
+select{
+    margin-left: 23px;
+    padding: 5px;
+    margin-top: 20px;
+}
+label{
+    margin-left: 23px;
+    font-size: 18px;
+    margin-right: 10px;
+    
+}
+button{
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 110px;
+    height: 39px;
+    border-radius: 9px;
+    background-color: rgb(236, 82, 11);
+    border: 2px solid rgb(236, 82, 11) ;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+/* begening of header section */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: serif;
+    
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: #1b1b1b ;
+    transition:background 1s;
+}
+.logo{
+    width: 250px;
+    cursor: pointer;
+    margin-left: 5%;
+
+}
+nav ul{
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 19px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: rgb(189, 8, 8);
+    text-decoration: none;
+    font-size: 24px;
+}
+nav:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(192, 0, 0);
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: rgb(139, 0, 0);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+nav ul li a:hover{
+  color: #000;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+
+.war{
+    width: 100%;
+}
+/* end of header section */

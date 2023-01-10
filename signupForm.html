@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Form</title>
+    <link rel="stylesheet" href="signupForm.css">
+    <script src="https://kit.fontawesome.com/d32ad1f828.js" crossorigin="anonymous"></script>
+    <script src="signupForm.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="real.html">HOME</a></li>
+                <li><a href="#">DONATE</a></li>
+                <li><a href="#aboutus">ABOUT US</a></li>
+                <li><a href="#Contact">CONTACT-US</a></li>
+                <li> 
+                    <i class="fa fa-login"></i>
+                <a href="signupForm.html">SIGNUP</a></li>
+                
+            </ul>
+        </nav>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Sign-Up</h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-feild" id="namefield">
+                        <i class="fa-solid fa-user"></i>
+                        <input class="demo" type="text" placeholder="Name">
+                        <div class="result"></div>
+                    </div>
+                    <div class="input-feild">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input class="demo" type="email" placeholder="Email">
+                        <div class="result"></div>
+                    </div>
+                    <div class="input-feild">
+                        <i class="fa-solid fa-lock"></i>
+                        <input class="demo" type="password" placeholder="Password">
+                        <div class="result"></div>
+                    </div>
+                    <p>Lost Password <a href="#">Click Here!</a></p>
+                </div>
+                <div class="btn-field">
+                    <button type="button"  id="signupBtn" onclick="xog(); return false;">Sign Up</button>
+                    <button type="button" id="signinBtn" class="disable">Sign In</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var signupBtn= document.getElementById('signupBtn');
+        var signinBtn= document.getElementById('signinBtn');
+        var namefield= document.getElementById('namefield');
+        var title= document.getElementById('title'); 
+        signinBtn.onclick= function(){
+            namefield.style.maxHeight='0';
+            title.innerHTML='Sign In';
+            signupBtn.classList.add("disable");
+            signinBtn.classList.remove("disable")
+
+        }
+        signupBtn.onclick= function(){
+            namefield.style.maxHeight='60px';
+            title.innerHTML='Sign Up';
+            signupBtn.classList.remove("disable");
+            signinBtn.classList.add("disable")
+
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>

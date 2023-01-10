@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title> STUDENT GRADING SYSTEM </title>
+    <link rel="stylesheet" href="jsASS.css">
+</head>
+<body>
+ <div class="container">
+    <form>
+        <h2> STUDENT GRADING SYSTEM </h2>
+        <input type="number" class="txt" placeholder="Enter The Marks Of Web ||..">
+        <br>  
+        <input type="number" class="txt" placeholder="Enter The Marks Of C++..">
+        <br>
+        <input type="number" class="txt" placeholder="Enter The Marks Of PDE..">
+        <br>
+        <input type="number" class="txt" placeholder="Enter The Marks Of SQL..">
+        <br>
+        <input type="number" class="txt" placeholder="Enter The Marks Of FINANCIAL ACC..">
+        <br>
+        <input type="number" class="txt" placeholder="Enter The Marks Of DATA-STRUCTURE..">
+        <br>
+        <input type="number" class="txt" placeholder="Enter The Marks Of UTS.."><br>
+        <button onclick="
+        var Web2,cpp,pde,sql,fA,ds,uts,total,avg;
+        var txt=document.getElementsByClassName('txt');
+        Web2=parseFloat(txt[0].value);
+        cpp=parseFloat(txt[1].value);
+        pde=parseFloat(txt[2].value);
+        sql=parseFloat(txt[3].value);
+        fA=parseFloat(txt[4].value);
+        ds=parseFloat(txt[5].value);
+        uts=parseFloat(txt[6].value)
+        total=Web2+cpp+pde+sql+ds+fA+uts;
+        avg=total/7;
+        txt[7].innerHTML='The Total Value Is  :'+total;
+        txt[8].innerHTML='The Average Is :'+avg;
+        if (avg>=50) {
+            txt[9].innerHTML='Congratulations You Have Passed'
+        }
+        else{
+            txt[9].innerHTML='Sorry You Have Fialed'
+        }
+        return false;
+      
+        ">CALCULATE </button>
+        <div class="txt" id="tex"></div>
+        <div class="txt" id="txt"></div>
+        <div class="txt" id="congrats"></div>
+        
+    </form>
+ </div>
+</body>
+</html>

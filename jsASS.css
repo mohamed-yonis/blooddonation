@@ -1,0 +1,55 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: rgb(161, 151, 248);
+    width: 400px;
+    height: 550px;
+    border-radius: 10px;
+    box-shadow: 15px black;
+}
+input{
+    margin: 10px;
+    padding: 6px;
+    border-radius: 6px;
+}
+h2{
+    margin-left: 19px;
+    color: rgb(129, 0, 0);
+}
+input:hover{
+    border-color: rgb(34, 255, 34);
+}
+button{
+    margin-left: 45%;
+    padding: 8px;
+    margin-top: 4%;
+    background-color: brown;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: 600;
+}
+button:hover{
+    background-color: aqua;
+    color: black;
+}
+#tex{
+    margin-left:5% ;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+#txt{
+    margin-left:5% ;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+#congrats{
+    margin-left:5% ;
+    color: rgb(31, 134, 0);
+    font-weight: 600;
+    font-size: 20px;
+}

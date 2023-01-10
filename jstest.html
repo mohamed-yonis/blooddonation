@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="farah" placeholder="enter your weight">
+    <button id="btn">Sumbit</button>
+    <p id="pii">faaarah</p>
+    <script>
+        var inpit= document.getElementById("farah");
+        var bTn=document.getElementById("btn");
+        var pi= document.getElementById("pii").innerText="waryaahiiie";
+       bTn.onclick= function(){
+        if(inpit.value<18){
+            inpit.value.style.color="red"
+         
+        }else{
+            console.log('You Are Okay')
+        }
+       }
+    </script>
+</body>
+</html>

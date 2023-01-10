@@ -1,0 +1,161 @@
+
+/* begening of header section */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: serif;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: #1b1b1b ;
+    transition:background 1s;
+}
+.logo{
+    width: 250px;
+    cursor: pointer;
+    margin-left: 5%;
+
+}
+nav ul{
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 19px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: rgb(189, 8, 8);
+    text-decoration: none;
+    font-weight: 600;
+}
+nav:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(192, 0, 0);
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: rgb(139, 0, 0);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+nav ul li a:hover{
+  color: #000;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+
+.war{
+    width: 100%;
+}
+/* end of header section */
+
+
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+
+body{
+    background-color: rgb(208, 207, 210);
+}
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: rgb(230, 91, 21) ;
+    position: relative;
+}
+.form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: rgb(230, 91, 21);
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.input-feild{
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+
+}
+input{
+    width:100% ;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+.input-feild i{
+    margin-left: 15px;
+    color: #999;
+
+}
+form p{
+    text-align: left;
+    font-size: 13px;
+
+}
+form p a{
+    text-decoration: none;
+    color: #3c00a0;
+}
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-field button{
+    flex-basis: 48%;
+    background: rgb(230, 91, 21);
+    color: #fff;
+    border-radius: 20px;
+    height:49px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+.input-group{
+    height: 280px;
+}
+.btn-field  button.disable{
+    background: #eaeaea;
+    color: #555;
+
+}
